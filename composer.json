@@ -5,10 +5,16 @@
     "require": {
         "symfony/yaml": "^5.2"
     },
+    "license": "GPL-2.0+",
     "authors": [
         {
             "name": "Matt Day",
             "email": "mattday95@live.co.uk"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "WpFreak\\EasyPostTypes\\": "src/"
+        }
+    }
 }
