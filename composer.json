@@ -1,0 +1,14 @@
+{
+    "name": "wpfreak/easy-post-types",
+    "description": "Provides a crazy simple, and easy to use wrapper for the Wordpress custom posts api",
+    "type": "project",
+    "require": {
+        "symfony/yaml": "^5.2"
+    },
+    "authors": [
+        {
+            "name": "Matt Day",
+            "email": "mattday95@live.co.uk"
+        }
+    ]
+}
