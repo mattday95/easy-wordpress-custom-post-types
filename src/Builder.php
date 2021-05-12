@@ -2,7 +2,7 @@
 
 namespace WpFreak\EasyPostTypes;
 
-use CustomPostType;
+use WpFreak\EasyPostTypes\CustomPostType;
 use Symfony\Component\Yaml\Yaml;
 
 class Builder {
