@@ -20,7 +20,14 @@ class Builder {
             $postName = ucfirst($postName);
             $args = isset($arr['args']) ? $arr['args'] : [];
             $labels = isset($arr['labels']) ? $arr['labels'] : [];
-            new CustomPostType($postName, $args, $labels);
+            $postType = new CustomPostType($postName, $args, $labels);
+            if(isset($arr['taxonomies'])):
+                foreach($arr['taxonomies'] as $taxonomyName => $arr):
+                    $args = isset($arr['args']) ? $arr['args'] : [];
+                    $labels = isset($arr['labels']) ? $arr['labels'] : [];
+                    $postType->add_taxonomy( $taxonomyName, $args, $labels );
+                endforeach;
+            endif;
         endforeach;
 
     }
